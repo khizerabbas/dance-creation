@@ -5,6 +5,7 @@ html, body {
 .top-nav {
     background-color: rgb(244, 67, 54);
     overflow: hidden;
+    z-index: 2;
 }
 
 .white-text {
@@ -12,23 +13,19 @@ html, body {
 }
 
 .sidenav {
+    margin-top: 100px;
     height: 100%;
     width: 300px;
     position: fixed;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    padding-top: 20px;
 }
 
 .main-container {
-    margin-left: 200px;
-}
-
-.sidenav-container {
-    margin-top: 75px;
+    margin-left: 300px;
 }
 
 .text-orange {
@@ -85,4 +82,8 @@ html, body {
 .material-switch > input[type="checkbox"]:checked + label::after {
     background: rgb(255, 64, 129);
     left: 20px;
+}
+
+#dance-creation-map{
+    height: 555px;
 }
